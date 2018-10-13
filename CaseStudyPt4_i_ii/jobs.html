@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+<head>
+<title>JavaJam Coffee House</title>
+<meta charset=“utf-8”>
+<style>
+body {
+background-color: #ffffcc;
+font-family: Verdana, sans-serif
+}
+#wrapper {
+background-image: url(src/content-image-background.JPG);
+width: 80%;
+margin: auto;
+min-width: 1100px;
+margin-top: 30px;
+box-shadow: 5px 5px 10px #666666;;
+}
+#leftcolumn {
+background-image: url(src/right-column.JPG);
+float: left;
+width: 155px;
+height: 430px;
+}
+#rightcolumn {
+margin-left: 155px;
+height: 420px;
+}
+#bottomcolumn {
+margin-bottom: 10px;
+margin-top: 10px;
+background-color: #D2B58B;
+}
+#floatright {
+float: right;
+padding-right: 180px;
+}
+#floatleft {
+float: left;
+padding-left: 30px;
+}
+header{
+background-color: #D2B58B;
+color: #00005D;
+font-size: 150%;
+padding: 20px 10px 10px 155px;
+font-weight: bold;
+}
+h1 {
+font-weight: bold;
+padding-bottom: 10px;
+padding-left: 26px;
+}
+h2.b {
+	/* background-color: #000000; */
+	background-image: url(src/right-column.JPG);
+	width: 600px;
+	margin-left: 150px;
+}
+p.a {
+	margin-right: 50px;
+	margin-left: 2px;
+	padding-bottom: 10px;
+}
+p.b {
+	margin-right: 400px;
+	padding-left: 300px;
+}
+img.a {
+	margin-left: 150px;
+	weight: 100px;
+	height: 100px;
+	float: left;
+}
+nav a {
+text-decoration: none;
+color: #97672E;
+}
+nav ul {
+list-style-type: none;
+}
+nav li {
+padding: 2px 9px;
+font-family: arial, sans-serif;
+font-weight: bold;
+font-size: 20px;
+}
+nav li a:hover {
+color: chocolate;
+}
+.content {
+padding-left: 20px;
+padding-top: 10px;
+color: #43210a;
+}
+.content ul {
+list-style-image: url(src/bullet-point.JPEG);
+}
+div.a {
+padding-left: 20px;
+}
+footer {
+font-size: 90%;
+padding-top: 15px;
+padding-bottom: 15px;
+text-align: center;
+}
+form {
+	font-family: Arial, sans-serif;
+	width: 700px;
+	padding: 10px;
+}
+label {
+	float: left;
+	width: 100px;
+	text-align: right;
+	padding-right: 10px;
+	margin-top: 10px;
+	display: block;
+}
+input, textarea {
+	display: block;
+	margin-top: 10px;
+	margin-left: 140px;
+}
+</style>
+<div id="wrapper">
+  <header>
+    <img src="src/title.JPG">
+  </header>
+  <div id="leftcolumn">
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="menu.php">Menu</a></li>
+      <li><a href="music.html">Music</a></li>
+      <li><a href="jobs.html">Jobs</a></li>
+	</ul>
+  </nav>
+  </div>
+	<div id="rightcolumn">
+    <div class="content">
+	<h2>Jobs at JavaJam</h2>
+			<p class="a">Want to work at JavaJam? Fill out the form below to start your application. Required fields are marked with an asterisk *</p>
+			<div>
+				<form action="show_post.php" method="post">
+					 <label for="name">* Name: </label>
+					 <input type="text" id="name" name="name" size="40" required>
+					 <label for="email">* Email: </label>
+					 <input type="email" id="email" name="email" placeholder="abc@example.com" size="40" required>
+					 <label for="startdate">Start Date: </label>
+					 <input type="date" id="date" name="date" required>
+					 <label type="experience">* Experience: </label>
+					 <textarea name="experience" id="experience" rows="6" cols="60" required></textarea>
+					<input type="submit" id="submit" value="Apply Now">
+				</form>
+			</div>
+			<div>
+			</div>
+  </div>
+</div>
+<footer id="bottomcolumn">
+	 <small>
+		 <i>
+		 Copyright &copy 2018 JavaJam Coffee House<br>
+		 <a href="mailto:chyeegin@hotmail.com">ChyeeGin@Phua.com</a>
+		 </i>
+	 </small>
+ </footer>
+ <script src="jobs.js"></script>
+</body>
+
+</html>
