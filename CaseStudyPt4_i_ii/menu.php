@@ -138,8 +138,6 @@ input[type=number]{
 	      <li><a href="menu.php">Menu</a></li>
 	      <li><a href="music.html">Music</a></li>
 	      <li><a href="jobs.html">Jobs</a></li>
-				<li><a href="update.html">Update</a></li>
-
 			</ul>
 	  </nav>
   </div>
@@ -147,7 +145,7 @@ input[type=number]{
   <div id="rightcolumn">
 
   	<div class="content">
-			<h1>Coffee at JavaJam</h1>
+			<h1><a href="update.html">Coffee at JavaJam</a></h1>
   	</div>
 
 	<form action="menu_order.php" method="post">

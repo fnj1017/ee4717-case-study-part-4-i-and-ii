@@ -1,5 +1,11 @@
 <?php
 
+  function redirect($url, $statusCode = 303)
+  {
+     header('Location: ' . $url, true, $statusCode);
+     die();
+  }
+
   $name = $_POST['name'];
   $size = $_POST['size'];
   $price=$_POST['price'];
@@ -28,10 +34,11 @@
   $result = mysqli_query($db,$query);
 
   if ($result) {
-      echo "<br>Update Completed." ;
+      echo "<br><h1>Update Completed.</h1>" ;
   } else {
   	  echo "<br>An error has occurred.";
   }
 
   $db->close();
+  echo '<a href="update.html">Back</a>';
 ?>

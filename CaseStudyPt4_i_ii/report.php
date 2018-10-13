@@ -111,6 +111,7 @@ input[type=number]{
   <div id="leftcolumn">
 	  <nav>
 		  <ul>
+				<li><a href="menu.php"><</a></li>
 	      <li><a href="update.html">Update</a></li>
 	      <li><a href="report.php">Report</a></li>
 	      <li><a href="daily_sales.php">Daily Sales</a></li>
