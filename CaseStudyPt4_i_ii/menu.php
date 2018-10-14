@@ -1,11 +1,12 @@
 <!doctype html>
 <html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
 <title>JavaJam Coffee House</title>
 <meta charset=“utf-8”>
 <style>
 body {
-/* background-image: url(background-image.JPG); */
 background-color: #ffffcc;
 font-family: Verdana, sans-serif
 }

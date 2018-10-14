@@ -1,7 +1,9 @@
 <!doctype html>
 <html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <head>
-<title>Daily Sales</title>
+<link rel="stylesheet" type="text/css" href="mystyle.css">
+<title>JavaJam Coffee House</title>
 <meta charset=“utf-8”>
 <style>
 body {
@@ -82,8 +84,8 @@ text-align: center;
 table {
 	margin-top: 10px;
 	margin-left: 100px;
-	width: 800px;
-	height: 100px;
+	width: 400px;
+	height: 200px;
 	border-spacing: 2px;
 	color: #43210a;
 }
@@ -112,66 +114,41 @@ input[type=number]{
 	  <nav>
 		  <ul>
 				<li><a href="menu.php"><</a></li>
-	      <li><a href="update.html">Update</a></li>
-	      <li><a href="report.php">Report</a></li>
+	      <li><a href="update.html">Price Update</a></li>
+	      <li><a href="report_update.php">Sales Report</a></li>
 	      <li><a href="daily_sales.php">Daily Sales</a></li>
-		  </ul>
+			</ul>
 	  </nav>
   </div>
 
   <div id="rightcolumn">
 
-  	<div class="content">
+		<div class="content">
 			<h1>Daily Sales</h1>
   	</div>
 
 		<table border="0" class="table">
-
 			<tr>
 				<th>
-					Select A Name
-				</th>
-				<th>
-					Select A Size
-				</th>
-				<th>
-					Set New Price
-				</th>
-				<th>
-					Click to Update Now
+					<a>View Page</a>
 				</th>
 			</tr>
-
-			<form action="update.php" method="post">
-
 			<tr>
 				<td>
-					<select name="name">
-						<option  value="Just Java">Just Java</option>
-					  <option  value="Cafe au Lait">Cafe au Lait</option>
-					  <option  value="Iced Cappuccino">Iced Cappuccino</option>
-					</select>
-				</td>
-				<td>
-					<select name="size">
-					  <option value="Single">Single</option>
-					  <option value="Double">Double</option>
-					  <option value="Endless Cup">Endless Cup</option>
-					</select>
-				</td>
-				<td>
-						$ &nbsp<input type="number" name="price" min="0">
-				</td>
-				<td>
-					<button type="submit" name="submit" value="Get Selected Values">Save</button>
+					<form action="daily_sales_update.php" method="get">
+						<label>Page No.: </label>
+						<input type="number" name="page" min="1">
+						<label>Date: </label>
+						<input type="date" name="date">
+						<button type="submit" name="submit" value="submit">Find</button>
+					</form>
 				</td>
 			</tr>
-		</form>
+		</table>
 
-	</table>
-</div>
+	</div>
 
-	<footer id="bottomcolumn">
+ <footer id="bottomcolumn">
 		<small>
 			<i>
 			Copyright &copy 2018 JavaJam Coffee House<br>
