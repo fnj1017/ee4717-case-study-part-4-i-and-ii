@@ -22,7 +22,7 @@
     $price = addslashes($price);
   }
 
-  @ $db = mysqli_connect("localhost", "root", "", "java-jam-coffee");
+  @ $db = mysqli_connect("localhost", "f37ee", "f37ee", "f37ee");
 
   if (mysqli_connect_errno()) {
     echo "<br>Failed to connect to MySQL: " . mysqli_connect_error();
